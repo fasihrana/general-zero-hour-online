@@ -132,3 +132,11 @@ Or
 ```
 WINEPREFIX="/home/<username>/Games/<your-command-conquer-generals-zero-hour-install-folder>/" wine GenLauncherGO.exe
 ```
+
+You can also run the Generals Online directly in the same directory:
+```
+WIWINEPREFIX=~/Games/<your-command-conquer-generals-zero-hour-install-folder>/ wine GeneralsOnlineZH.exe
+```
+
+### Problems
+At the moment the game exits/crashes as soon as you go to Online and select a Quick Match or select to join a Custom Match
