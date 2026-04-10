@@ -34,27 +34,56 @@ You can try to run the game at this point, but if you want to complete the setup
 ```
 with contents:
 ```
-AntiAliasing = 0
+AntiAliasing = 23
+ArchiveReplays = no
 BuildingOcclusion = yes
 CampaignDifficulty = 0
-DrawScrollAnchor =
+CursorCaptureEnabledInFullscreenGame = yes
+CursorCaptureEnabledInFullscreenMenu = yes
+CursorCaptureEnabledInWindowedGame = yes
+CursorCaptureEnabledInWindowedMenu = yes
+DrawScrollAnchor = no
 DynamicLOD = yes
 ExtraAnimations = yes
-GameSpyIPAddress = 0.0.0.0
+FirewallBehavior = 1
+FirewallNeedToRefresh = FALSE
+FirewallPortAllocationDelta = 0
+GameSpyIPAddress = 192.168.1.122
+GameTimeFontSize = 8
 Gamma = 50
-IPAddress = 0.0.0.0
+HeatEffects = no
+IPAddress = 192.168.1.122
 IdealStaticGameLOD = High
 LanguageFilter = false
-MoveScrollAnchor =
-MusicVolume = 50
-Resolution = 1920 1080
+MaxParticleCount = 2500
+MoneyTransactionVolume = 0
+MoveScrollAnchor = no
+MusicVolume = 0
+NetworkLatencyFontSize = 8
+PlayerInfoListFontSize = 8
+PlayerObserverEnabled = yes
+RenderFpsFontSize = 8
+Resolution = 3840 2160
+ResolutionFontAdjustment = -100
 Retaliation = yes
 SFX3DVolume = 79
 SFXVolume = 71
+ScreenEdgeScrollEnabledInFullscreenApp = yes
+ScreenEdgeScrollEnabledInWindowedApp = no
 ScrollFactor = 50
 SendDelay = no
-StaticGameLOD = High
+ShowMoneyPerMinute = no
+ShowSoftWaterEdge = yes
+ShowTrees = yes
+StaticGameLOD = Custom
+SystemTimeFontSize = 8
+TextureReduction = 0
 UseAlternateMouse = no
+UseCloudMap = no
+UseDoubleClickAttackMove = no
+UseLightMap = yes
+UseShadowDecals = yes
+UseShadowVolumes = no
 VoiceVolume = 70
 ```
 
