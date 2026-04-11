@@ -1,8 +1,76 @@
 # Command & Conquer Generals - Zero Hour and Online
-Instructions on how to run Generals Zero Hour and Generals Online on CachyOS using Lutris and Wine 
+Instructions on how to run Generals Zero Hour and Generals Online on CachyOS 
 
 ## Installation
-To Install Generals Zero Hour followo the following steps. I'm using an iso that contains both Generals and Generals - Zero Hour install.
+This was tried on POL (PlayOnLinux). POL is not available on pacman, but is available on paru which is a package manager for AUR.
+
+### 1. Download the files
+1.1. Generals Zero Hour - download [link](https://dn721806.ca.archive.org/0/items/generals-zero-1.04/Generals%20Zero%201.04.rar)  
+1.2. [Generals Online](https://www.playgenerals.online/#download) - download [link](https://cdn.playgenerals.online/GeneralsOnline_setup_032926_QFE5.exe)  
+1.3. [GenLauncher](https://www.moddb.com/mods/genlauncher/downloads/genlauncher1009) - download [link](https://www.moddb.com/downloads/start/277509). This is a zip file, extract the .exe from it.  
+1.4. GenLauncherGo - download [link](https://www.playgenerals.online/download/GenLauncherGO.exe)  
+1.5. [GenTool](https://www.gentool.net/) - download [link](https://www.gentool.net/download/GenTool_v8.9.exe)
+
+### 2. Install
+2.1. On POL, click on 'Install a program'  
+2.2. Then click 'Install a non-listed program'  
+2.3. Click 'Next' on the 'Manual Installation' prompt  
+2.4. Select 'Install a program in a new virtual drive'  
+2.5. Type a name like 'cc-generals-zh' or something of your liking, then click 'Next'.  
+2.6. Click 'Next' without selecting anything on the next screen.  
+2.7. Select '64 bits windows installation' and click 'Next'  
+2.8. Click 'Browse' and select the `setup.exe` for Generals Zero Hour. It may prompt you for a CD KEY.  
+2.9. Click through as prompted to complete the installation.  
+2.10. After the installation, it will ask you to Create a shortcut, go to the next section for that.
+
+### 3. Create the Shortcuts
+The create shortcut menu lists the following two choices at the top followed by a number of executables that it give you an option for:
+a. _'I don't want to make another shortcut'_ (Selecting this and clicking 'Next' will exit the shortcut menu)  
+b. _'Browse'_  
+3.1. Select 'Browse' and click 'Next'.  
+3.2. Click 'Browse'.
+3.3. Navigate to 'Program Files (x86)' > 'Command & Conquer Generals Zero 1.04' > 'Command & Conquer Generals Zero Hour'.  
+3.4. Select `generals.exe` and click 'Open'.  
+
+### 4. Install the Patches
+This is the 'Configure' > 'Miscellaneous' menu  
+4.1. On POL, from the games list, select your game but do not run it yet.  
+4.2. In the sidebar on the left, click 'Configure'.  
+4.3. Click on the 'Miscellaneous' tab.  
+4.4. Click 'Run a windows Executable (.exe) file in the virtual drive'.  
+4.5. Find the `GenTool_v8.9.exe` and click 'Open' and finish the installation.
+4.6. Click 'Run a windows Executable (.exe) file in the virtual drive' again.  
+4.7. Find the `GeneralsOnline_setup_032926_QFE5.exe` and click 'Open'
+
+### 5. Copy 'Generals Online' Files
+This is the 'Configure' > 'Miscellaneous' menu.  
+5.1. Follow steps 4.1 to 4.3.  
+5.2. Click 'Open program directory' and make sure it is the 'Command & Conquer Generals Zero Hour' folder. If it is not that folder, that means you created a shortcut for Command & Conquer Generals  executable.  
+5.3. Copy `GenLauncherGO.exe` and `GenLauncher.exe` to the directory from step 5.2.  
+5.4. To run the `GenLauncher.exe` follow the steps 4.1 to 4.4 then select the file by navigating to the folder you copied it to. This won't work if these excutables are not copied to the 'Command & Conquer Generals Zero Hour' folder.  
+
+### 6. Install wintricks Items
+This is the 'Configure' > 'Miscellaneous' menu.    
+6.1. Follow steps 4.1 to 4.3.  
+6.2. Click on 'Open a shell'.  
+6.3. On the command prompt type this `winetricks corefonts allfonts dotnet48` then press enter and click through any menus that popup to complete the installation of these.  
+
+### 7. Shortcuts for Online executables
+This is the 'Configure' menu.  
+7.1. On POL, from the games list, select your game but do not run it yet.    
+7.2. In the sidebar on the left, click 'Configure'.  
+7.3. On the menu, in the left sidebar, you will have 'cc_generals_zh' or the name you chose in step 2.5 will be listed, click on that.  
+7.4. On the 'General' tab, click 'Make a new shortcut from this virtual drive' and the menu from section **3** will show up.  
+7.5. If `GenLauncher.exe` is listed, then select that and click 'Next'.  
+7.6. Give it an appropriate name and click 'Next'. This will create an entry under the 'cc_generals_zh' menu from 7.3.  
+7.7. It will prompt you for more shortcuts, if you see one for `GeneralsOnlineZH.exe` then repeat the steps 7.5 and 7.6 for it.  
+
+### Problems
+1. Framerate mismatch error
+
+## Alternate Installation (not quite working)
+**NOTE** This was tried on Lutris and PlayOnLinux, but the iso version did not work.  
+To Install Generals Zero Hour on Lutris follow these steps. I'm using an iso that contains both Generals and Generals - Zero Hour install.
 
 ### 1. Mount the iso
 Assumes that the Zero Hour iso is in the Downloads folder
@@ -140,3 +208,5 @@ WIWINEPREFIX=~/Games/<your-command-conquer-generals-zero-hour-install-folder>/ w
 
 ### Problems
 At the moment the game exits/crashes as soon as you go to Online and select a Quick Match or select to join a Custom Match
+
+
