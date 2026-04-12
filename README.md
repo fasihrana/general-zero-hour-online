@@ -1,7 +1,9 @@
 # Command & Conquer Generals - Zero Hour and Online
 Instructions on how to run Generals Zero Hour and Generals Online on CachyOS 
 
-Alt instructions [here](https://gist.github.com/fasihrana/9ae85c1b4f78a4153421c275bb777598).
+## Other Instructions Tried
+1. Simplified [here](https://gist.github.com/fasihrana/9ae85c1b4f78a4153421c275bb777598).
+2. Steam version [here](https://docs.google.com/document/d/e/2PACX-1vSwYI5JdYH4bWB6WuXOHXNRv8loEtPUABNtGDliMWuQ2QiaLs-Y9mVrH_eHRjvif5SLJfQ9iAJ7mNir/pub).
 
 ## Installation
 This was tried on POL (PlayOnLinux). POL is not available on pacman, but is available on paru which is a package manager for AUR.
